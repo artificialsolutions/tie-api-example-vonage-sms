@@ -160,5 +160,10 @@ function SessionHandler() {
 
 // start the express application
 http.createServer(app).listen(port, () => {
-  console.log(`Listening on port: ${config.port}`);
+  if(config.port==undefined){
+    console.log(`PORT is undefined. Please check that .env file exists and that its settings are correct.`)
+  }
+  else{
+    console.log(`Listening on port: ${config.port}`);
+  }
 });
