@@ -1,6 +1,7 @@
 {
-  "version": "1.0",
-  "description": "A basic example of using Teneo and Nexmo SMS",
+  "name": "@artificialsolutions/tie-api-example-nexmo-sms",
+  "version": "1.0.0",
+  "description": "An example of using Teneo and Nexmo SMS",
   "main": "server.js",
   "engines": {
     "node": ">=10.13.0",
