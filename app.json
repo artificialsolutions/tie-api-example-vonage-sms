@@ -1,5 +1,5 @@
 {
-    "name": "nexmo-sms-teneo",
+    "name": "tie-api-example-nexmo-sms",
     "description": "A Teneo bot connector for Nexmo SMS.",
     "keywords": [
         "bot",
