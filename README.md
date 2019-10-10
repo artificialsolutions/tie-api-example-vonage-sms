@@ -48,13 +48,6 @@ In the 'Config Vars' section, add the following:
 
 * **NEXMO_NUMBER** Use the Virtual Phone Number found [here](https://dashboard.nexmo.com/your-numbers) purchased previously, in E.164 format. 
 
-    *Important:* The country code used `NEXMO_NUMBER` in must always have 3 digits, so pad zero(es) to the left of country      code to fulfill this requirement when needed.  
-    Example:
-    
-  -For a Spanish Virtual Phone Number `6000 00000`, with the country code `+34`, set `NEXMO_NUMBER` to `+034600000000`. 
-
-  -For a US Virtual Phone Number `2000 000000`, with the country code `+1`, set `NEXMO_NUMBER` to `+0012000000000`.
-
 * **TENEO_ENGINE_URL:** The engine url of your bot.
 
 * **PORT** (Optional) Port for the app to listen on, defaults to 1337 when left blank.
