@@ -1,5 +1,5 @@
 {
-  "version": "1.2.0",
+  "version": "1.0",
   "description": "A basic example of using Teneo and Nexmo SMS",
   "main": "server.js",
   "engines": {
