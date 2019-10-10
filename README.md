@@ -48,7 +48,7 @@ In the 'Config Vars' section, add the following:
 
 * **NEXMO_NUMBER** Use the Virtual Phone Number found [here](https://dashboard.nexmo.com/your-numbers) purchased previously, in E.164 format. 
 
-    *Important:* The country code used `NEXMO_NUMBER` in must always have 3 digits, so add zero(es) to the left of country      code to fulfill this requirement when needed.  
+    *Important:* The country code used `NEXMO_NUMBER` in must always have 3 digits, so pad zero(es) to the left of country      code to fulfill this requirement when needed.  
     Example:
     
   -For a Spanish Virtual Phone Number `6000 00000`, with the country code `+34`, set `NEXMO_NUMBER` to `+034600000000`. 
@@ -57,7 +57,7 @@ In the 'Config Vars' section, add the following:
 
 * **TENEO_ENGINE_URL:** The engine url of your bot.
 
-* **PORT** (Optional) Set a specific port value, or leave this field blank to use 1337 by default (recommended).
+* **PORT** (Optional) Port for the app to listen on, defaults to 1337 when left blank.
 
 Click on `Deploy App`, and wait for Heroku to complete the deployment. Click `View` to see your new Heroku's app URL. Copy it, we will use it as a `Incoming Webhook URL` in the final step below.
 
@@ -86,7 +86,7 @@ If you want to run the connector locally, follow the steps below.
     NEXMO_API_SECRET=<your "API Secret 1" value>
     NEXMO_NUMBER=<Virtual Phone Number>  #use E.164 format. For example: `+034600000000` or +0012000000000 
     #Optional parameters:
-    #PORT=<Port>  #Uncomment to set a port number, otherwise 1337 will be used by default.
+    #PORT=<Port>  #Port for the app to listen on, defaults to 1337 if not specified.
     ```
 4. Start the connector:
     ```
