@@ -72,7 +72,7 @@ If you want to run the connector locally, follow the steps below.
     ```
     npm install
     ``` 
-3. Create a file called `.env` in the `tie-api-example-nexmo-sms` folder. Replace the dummy URL with Teneo Engine URL of your bot). "API key" and "API Secret" are found in [Settings](https://dashboard.nexmo.com/settings)
+3. Create a file called `.env` in the `tie-api-example-nexmo-sms` folder. Replace the dummy URL with Teneo Engine URL of your bot. "API key" and "API Secret" are found in [Settings](https://dashboard.nexmo.com/settings)
     ```
     TENEO_ENGINE_URL=<your_engine_url>
     NEXMO_API_KEY=<your "API key" value>
