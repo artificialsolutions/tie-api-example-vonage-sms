@@ -9,15 +9,12 @@ Your bot needs to be published and you need to know the engine url.
 A [Nexmo](https://dashboard.nexmo.com/sign-up) account with a 'Virtual Phone Number' configured in it.
 The steps to setup the account, configure Billing, and buying a virtual number are described ahead.
 
-_Important:_ Adding funds is required to buy a 'Virtual Phone Number'. €10 will suffice to purchase a number and send many SMS.
+_Important:_ Adding funds is required to buy a 'Virtual Phone Number'. €10 will suffice to purchase a number and send many SMS messages.
 
 ### HTTPS
 A [Heroku](https://www.heroku.com/home) account is required to deploy the connector online.
 
-Or,
-
-to run the connector locally, [ngrok](https://ngrok.com/) is preferred to make the connector available via HTTPS.
-
+Or, to run the connector locally, [ngrok](https://ngrok.com/) is preferred to make the connector available via HTTPS.
 
 ## Nexmo Setup Instructions
 To setup communication wit SMS messages between a Teneo bot and Nexmo SMS API the follow these steps:
@@ -73,7 +70,7 @@ If you want to run the connector locally, follow the steps below.
     TENEO_ENGINE_URL=<your_engine_url>
     NEXMO_API_KEY=<your "API key" value>
     NEXMO_API_SECRET=<your "API Secret 1" value>
-    NEXMO_NUMBER=<Virtual Phone Number>  #use E.164 format. For example: `+034600000000` or +0012000000000 
+    NEXMO_NUMBER=<Virtual Phone Number>  #use E.164 format. 
     #Optional parameters:
     #PORT=<Port>  #Port for the app to listen on, defaults to 1337 if not specified.
     ```
@@ -90,9 +87,9 @@ Next, we need to make the connector available via https. We'll use [ngrok](https
     ```
 2. Running the command above will display a public https URL. Copy it, we will use it as a `Incoming Webhook URL` in the final step below.
 
-3. Inside your Nexmo account's dashboard, [navigate](https://dashboard.nexmo.com/your-numbers) to the Virtual Phone Number you     purchased in the previous step, and click on `Manage`.
-Now, set `Inbound Webhook URL` to:
-`<https://abcd1234.ngrok.io/teneochat>`. Notice that the path `/teneochat` was added to the end of the URL.
+3. Inside your Nexmo account's dashboard, [navigate](https://dashboard.nexmo.com/your-numbers) to the Virtual Phone Number you purchased in the previous step, and click on `Manage`.
+Now, set `Inbound Webhook URL` to the https forwarding url you copied in step 2:
+`https://<abcd1234>.ngrok.io/teneochat`. Notice that the path `/teneochat` was added to the end of the URL.
 Also, ensure your default SMS [settings](https://dashboard.nexmo.com/settings) are set to HTTP Method of `POST`.
 
 That's it! Text your 'Virtual Phone Number' with a mobile phone, and the Teneo bot will send an SMS reply!
