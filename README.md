@@ -6,10 +6,10 @@ This example Node.js connector enables a Teneo bot to communicate with users by 
 Your bot needs to be published and you need to know the engine url.
 
 ### Nexmo SMS API
-A [Nexmo](https://dashboard.nexmo.com/sign-up) account with a `Virtual Phone Number` configured in it.
+A [Nexmo](https://dashboard.nexmo.com/sign-up) account with a 'Virtual Phone Number' configured in it.
 The steps to setup the account, configure Billing, and buying a virtual number are described ahead.
 
-_Important:_ Adding funds is required to buy a `Virtual Phone Number`. €10 will suffice to purchase a number and send many SMS.
+_Important:_ Adding funds is required to buy a 'Virtual Phone Number'. €10 will suffice to purchase a number and send many SMS.
 
 ### HTTPS
 A [Heroku](https://www.heroku.com/home) account is required to deploy the connector online.
@@ -24,8 +24,8 @@ To setup communication wit SMS messages between a Teneo bot and Nexmo SMS API th
 1. Register an account [here](https://dashboard.nexmo.com/sign-up).
 2. Set up Billing
     From your new account's dashboard, open [Billing and Payment](https://dashboard.nexmo.com/billing-and-payments).
-    Set up a payment method and add €10 to your funds. €10 should be enough to purchase a virtual SMS phone number for around 2€ or €4, and send many SMS for a few cents each. [Pricing](https://dashboard.nexmo.com/pricing) varies per country.
-3. Buy a `Virtual Phone Number`
+    Set up a payment method and add €10 to your funds. €10 should be enough to purchase a virtual SMS phone number for around     2€ or €4, and send many SMS for a few cents each. [Pricing](https://dashboard.nexmo.com/pricing) varies per country.
+3. Buy a 'Virtual Phone Number'
     Open the [Buy Number](https://dashboard.nexmo.com/buy-numbers) section your Nexmo dashboard.
     Select your country to obtain cheaper rates, set features to `SMS`, set Type as `Mobile`, and click `Search`.
     Choose a number from the list, click `Buy`. Note: The process of buying virtual phone numbers may vary across countries.
@@ -55,7 +55,7 @@ Now, set `Inbound Webhook URL` to:
 `<https://yourproject.herokuapp.com/teneochat>`. Notice that the path `/teneochat` was added to the end of the URL.
 Also, ensure your default SMS [settings](https://dashboard.nexmo.com/settings) are set to HTTP Method of `POST`.
 
-That's it! Text your `Virtual Phone Number` with a mobile phone, and the Teneo bot will send an SMS reply!
+That's it! Text your 'Virtual Phone Number' with a mobile phone, and the Teneo bot will send an SMS reply!
 
 ### Running the connector locally
 The local deployment of this connector allows the enhancement and modification of its functionalities.
@@ -68,7 +68,7 @@ If you want to run the connector locally, follow the steps below.
     ```
     npm install
     ``` 
-3. Create a file called `.env` in the `tie-api-example-nexmo-sms` folder. Replace the dummy URL with Teneo Engine URL of your bot). "API key" and "API Secret" are found in [Settings](https://dashboard.nexmo.com/settings)
+3. Create a file called `.env` in the `tie-api-example-nexmo-sms` folder. Replace the dummy URL with Teneo Engine URL of your bot. "API key" and "API Secret" are found in [Settings](https://dashboard.nexmo.com/settings)
     ```
     TENEO_ENGINE_URL=<your_engine_url>
     NEXMO_API_KEY=<your "API key" value>
@@ -95,4 +95,4 @@ Now, set `Inbound Webhook URL` to:
 `<https://abcd1234.ngrok.io/teneochat>`. Notice that the path `/teneochat` was added to the end of the URL.
 Also, ensure your default SMS [settings](https://dashboard.nexmo.com/settings) are set to HTTP Method of `POST`.
 
-That's it! Text your `Virtual Phone Number` with a mobile phone, and the Teneo bot will send an SMS reply!
+That's it! Text your 'Virtual Phone Number' with a mobile phone, and the Teneo bot will send an SMS reply!
