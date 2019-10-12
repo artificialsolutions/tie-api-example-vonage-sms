@@ -12,11 +12,7 @@
         "TENEO_ENGINE_URL": {
             "description": "Please input your Teneo Engine URL. https://some.engine/instance/",
             "required":true
-        },
-        "PORT": {
-            "description": "Port for the app to listen on, defaults to 1337 if not specified",
-            "required":false
-        },        
+        },      
         "NEXMO_NUMBER": {
             "description": "Number to send the SMS from in E.164 format",
             "required":true

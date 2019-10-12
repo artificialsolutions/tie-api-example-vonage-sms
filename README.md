@@ -17,14 +17,14 @@ A [Heroku](https://www.heroku.com/home) account is required to deploy the connec
 Or, to run the connector locally, [ngrok](https://ngrok.com/) is preferred to make the connector available via HTTPS.
 
 ## Nexmo Setup Instructions
-To setup communication wit SMS messages between a Teneo bot and Nexmo SMS API the follow these steps:
+To setup communication by SMS between a Teneo bot and Nexmo's SMS API follow these steps:
 1. Register an account [here](https://dashboard.nexmo.com/sign-up).
 2. Set up Billing
     From your new account's dashboard, open [Billing and Payment](https://dashboard.nexmo.com/billing-and-payments).
-    Set up a payment method and add €10 to your funds. €10 should be enough to purchase a virtual SMS phone number for around     2€ or €4, and send many SMS for a few cents each. [Pricing](https://dashboard.nexmo.com/pricing) varies per country.
+    Set up a payment method and add €10 to your funds. This should be enough to purchase a virtual SMS phone number for around 2€ or €4, and send many SMS messages for a few cents each. [Pricing](https://dashboard.nexmo.com/pricing) varies per country.
 3. Buy a 'Virtual Phone Number'
     Open the [Buy Number](https://dashboard.nexmo.com/buy-numbers) section your Nexmo dashboard.
-    Select your country to obtain cheaper rates, set features to `SMS`, set Type as `Mobile`, and click `Search`.
+    Select your country to obtain cheaper rates, set 'Features' to `SMS`, set Type to `Mobile`, and click 'Search'.
     Choose a number from the list, click `Buy`. Note: The process of buying virtual phone numbers may vary across countries.
   
 
@@ -43,7 +43,6 @@ In the 'Config Vars' section, add the following:
 * **NEXMO_API_SECRET** Use the `API Secret 1`, also found in [Settings](https://dashboard.nexmo.com/settings).
 * **NEXMO_NUMBER** Use the Virtual Phone Number found [here](https://dashboard.nexmo.com/your-numbers) purchased previously, in E.164 format. 
 * **TENEO_ENGINE_URL:** The engine url of your bot.
-* **PORT** (Optional) Port for the app to listen on, defaults to 1337 when left blank.
 
 Click on 'Deploy App', and wait for Heroku to complete the deployment. Click 'View' to see your new Heroku's app URL. Copy it, we will use it as a `Incoming Webhook URL` in the final step below.
 
