@@ -12,6 +12,9 @@ The steps to setup the account, configure Billing, and buying a virtual number a
 _Important:_ Adding funds is required to buy a 'Virtual Phone Number'. €10 will suffice to purchase a number and send many SMS messages.
 
 ### HTTPS
+
+**Note: Starting November 28, 2022, free Heroku Dynos, free Heroku Postgres, and free Heroku Data for Redis® plans will no longer be available.**
+
 A [Heroku](https://www.heroku.com/home) account is required to deploy the connector online.
 
 Or, to run the connector locally, [ngrok](https://ngrok.com/) is preferred to make the connector available via HTTPS.
