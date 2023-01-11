@@ -57,7 +57,7 @@ The local deployment of this connector allows you to enhance and modify its func
 
 1. Download or clone the connector source code:
     ```
-    git clone https://github.com/artificialsolutions/tie-api-example-nexmo-sms.git && cd tie-api-example-Vonage-sms
+    git clone https://github.com/artificialsolutions/tie-api-example-nexmo-sms.git && cd tie-api-example-nexmo-sms
     ```
 2. Install dependencies by running the following command in the folder where you stored the source:
     ```
