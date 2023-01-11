@@ -45,9 +45,9 @@ The local deployment of this connector allows you to enhance and modify its func
 3. Create a file called `.env` in the `tie-api-example-Vonage-sms` folder. Replace the dummy URL with Teneo Engine URL of your bot. "API key" and "API Secret" are found in [Settings](https://dashboard.nexmo.com/settings)
     ```
     TENEO_ENGINE_URL=<your_engine_url>
-    Vonage_API_KEY=<your API key>
-    Vonage_API_SECRET=<your API Secret 1>
-    Vonage_NUMBER=<Virtual Phone Number in E.164 format>
+    NEXMO_API_KEY=<your API key>
+    NEXMO_API_SECRET=<your API Secret 1>
+    NEXMO_NUMBER=<Virtual Phone Number in E.164 format>
     ```
 4. Start the connector:
     ```
@@ -60,7 +60,8 @@ Next, we need to make the connector available via https. We'll use [ngrok](https
     ```
     ngrok http 1337
     ```
-2. Running the command above will display a public https URL. Copy it, we will use it as a `Incoming Webhook URL` in the final step below.
+2. Running the command above will display a public https URL. Copy it, we will use it as a `Incoming Webhook URL` in the step below.
 3. Inside your Vonage account's dashboard, [navigate](https://dashboard.nexmo.com/your-numbers) to the Virtual Phone Number you purchased in the previous step, and click on `Manage`. Paste the public https URL provided by ngrok in the `Inbound Webhook URL` field and append it will `/teneochat`. It should look something like this: https://abcd1234.ngrok.io/teneochat. 
+4. Also [Update your Vonage sms settings](https://dashboard.nexmo.com/settings) under Build & Manage -> API Settings, change Webhook format from a `GET` to a `POST`
 
 That's it! Text your Virtual Phone Number with a mobile phone, and the Teneo bot will send an SMS reply!
