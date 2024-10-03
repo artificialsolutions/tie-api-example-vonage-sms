@@ -1,4 +1,9 @@
 # tie-api-example-vonage-sms
+
+> [!IMPORTANT]
+> This project has been retired and archived  
+> If there is a need of continued use / development of this project for your own needs please feel free to fork the project - which will remain here in archived form.
+
 The Vonage SMS connector enables a Teneo bot to communicate with users by receiving and sending SMS messages. This Node.js connector acts as middleware between Vonage SMS API and a Teneo bot to implement SMS communication with persisting state and conversational position. Visit [Vonage](https://developer.Vonage.com/api/sms) for more information.
 
 ## Prerequisites
